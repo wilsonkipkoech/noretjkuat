@@ -1,0 +1,1 @@
+noretjkuat.blade.php

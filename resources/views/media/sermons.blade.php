@@ -1,1 +1,1 @@
-sermons.blade.php
+@extends('main')

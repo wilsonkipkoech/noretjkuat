@@ -12,35 +12,52 @@
 */
 
 
+// //
+// Route::get('/','HomeController@home');
+Route::get('/blog','HomeController@getblog');
+Route::get('/jkuatcu','HomeController@getjkuatcu');
+Route::get('/mission','HomeController@getmission');
+Route::get('/register','HomeController@register');
 
-Route::get('/','HomeController@home');
-Route::get('blog','HomeController@getblog');
-Route::get('jkuatcu','HomeController@getjkuatcu');
-Route::get('mission','HomeController@getmission');
+// Route::get('/register',function(){
+// 	 $county=County::all()
+// 	return view::Make('auth.register')->with('county',$county);
+// });
 
 // Route::get('ministry','HomeController@getministry');
 // Route::get('media','HomeController@getmedia');
 // Route::get('about','HomeController@getabout');
-//Route::get('portal','HomeController@getportal');
+//Route::get('/portal','HomeController@getportal');
 
 //routes for Ministries
-Route::get('ministry',['uses'=>'MinistryController@getchoir', 'as'=>'minitry.choir']);
-Route::get('ministry',['uses'=>'MinistryController@getSound','as'=>'ministry.sound']);
-Route::get('ministry',['uses'=>'MinistryController@gethospitality','as'=>'ministry.hospitality']);
+Route::get('/choir_praiseW','MinistryController@getchoir');
+Route::get('/sound','MinistryController@getSound');
+Route::get('hospitality','MinistryController@gethospitality');
 
 //routes for Media section
-Route::get('media',['uses'=>'MediaController@getphotos','as'=>'media.photos']);
-Route::get('media',['uses'=>'MediaController@getvideo','as'=>'media.videos']);
-Route::get('media',['uses'=>'MediaController@getsermon','as'=>'media.sermon']);
-Route::get('media',['uses'=>'MediaController@getsemesterprogram','as'=>'media.semesterprogram']);
-Route::get('media',['uses'=>'MediaController@getagmreports','as'=>'media.agmreports']);
-Route::get('media',['uses'=>'MediaController@getannouncements','as'=>'media.announcements']);
+Route::get('/photos','MediaController@getphotos');
+Route::get('/videos','MediaController@getvideo');
+Route::get('sermon','MediaController@getsermon');
+Route::get('/semesterprogram','MediaController@getsemesterprogram');
+Route::get('/agmreports','MediaController@getagmreports');
+Route::get('/announcements','MediaController@getannouncements');
 
 
 
 //routes for Abouts section
-Route::get('abouts',['uses'=>'AboutController@getnoretjkuat','as'=>'abouts.noretjkuat']);
+Route::get('/noretjkuat','AboutController@getnoretjkuat');
 
-Route::get('/abouts','AboutController@getexcutive');
-Route::get('abouts',['uses'=>'AboutController@getmembership', 'as'=>'abouts.membership']);
+Route::get('/executive','AboutController@getexecutive');
+
+Route::get('/membership','AboutController@getmembership');
+
+
+Auth::routes();
+Route::get('/', function(){
+	return view('pages.home');
+});
+
+Route::get('/portal',function(){
+	return view('partials.portal');
+});
 

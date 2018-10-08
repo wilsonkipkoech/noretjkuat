@@ -1,1 +1,1 @@
-blog.blade.php
+@extends('main')

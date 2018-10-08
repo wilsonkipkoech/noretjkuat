@@ -16,6 +16,10 @@ class MediaController extends Controller
     public function getsermon(){
     	 return view('media.sermons');
     }
+
+    public function getannouncements(){
+        return view('media.announcements');
+    }
     public function getsemesterprogram(){
     	 return view('media.semesterprogram');
     }

@@ -327,6 +327,11 @@ header .navbar.navbar-light .nav-link.active {
   font-size: 30px;
 }
 
+.images{
+ 
+  background: url("/images/images_1.jpg");
+}
+
 .site-hero-innerpage, .site-hero-innerpage .site-hero-inner {
   min-height: 550px;
   height: 50vh;
@@ -1096,7 +1101,7 @@ blockquote p {
   background-repeat: no-repeat;
   padding: 5em 0;
   line-height: 1.7;
-  background: #6c5b7b;
+  background: #a4addd;
 }
 
 .site-footer .heading {
@@ -2468,7 +2473,7 @@ blockquote p {
 }
 
 .block-45 {
-  background: #6c5b7b;
+  background: #657aed;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 14px;

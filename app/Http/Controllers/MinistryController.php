@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class MinistryController extends Controller
 {
-    public fuction getchoir(){
+    public function getchoir(){
     	return view('ministry.choir_praiseW');
 
     }
@@ -17,6 +17,10 @@ class MinistryController extends Controller
 
     public function gethospitality(){
     	return view('ministry.hospitality');
+    }
+
+    public function getcreative(){
+    	return view('ministry.creative');
     }
 }
 

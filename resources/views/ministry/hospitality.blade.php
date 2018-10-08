@@ -1,1 +1,1 @@
-hospitality.blade.php
+@extends('main')

@@ -1,1 +1,1 @@
-video.blade.php
+@extends('main')

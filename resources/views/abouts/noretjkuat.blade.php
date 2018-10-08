@@ -1,1 +1,1 @@
-noretjkuat.blade.php
+@extends('main')

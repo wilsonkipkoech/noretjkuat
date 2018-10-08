@@ -1,1 +1,1 @@
-sound.blade.php
+@extends('main')

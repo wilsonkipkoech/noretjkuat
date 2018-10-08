@@ -1,1 +1,1 @@
-agmreports.blade.php
+@extends('main')

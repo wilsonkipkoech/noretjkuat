@@ -1,1 +1,1 @@
-mission.blade.php
+@extends('main')

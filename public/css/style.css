@@ -218,21 +218,6 @@ header .navbar.navbar-light .nav-link.active {
   z-index: 2;
 }
 
-.site-hero .btn {
-  -webkit-box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.2) !important;
-  box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.2) !important;
-  background: #6c5b7b !important;
-  border: 2px solid transparent !important;
-  color: #fff;
-}
-
-.site-hero .btn:hover {
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  background: none !important;
-  color: #fff;
-  border: 2px solid #fff !important;
-}
 
 .site-hero.overlay {
   position: relative;
@@ -542,96 +527,6 @@ header .navbar.navbar-light .nav-link.active {
   color: #fff;
 }
 
-.top-course .course, .top-course .blog-entry, .blog-entries .course, .blog-entries .blog-entry {
-  display: block;
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
-  margin-bottom: 30px;
-}
-
-.top-course .course:hover, .top-course .course:focus, .top-course .blog-entry:hover, .top-course .blog-entry:focus, .blog-entries .course:hover, .blog-entries .course:focus, .blog-entries .blog-entry:hover, .blog-entries .blog-entry:focus {
-  opacity: .7;
-}
-
-.top-course .course img, .top-course .blog-entry img, .blog-entries .course img, .blog-entries .blog-entry img {
-  max-width: 100%;
-  margin-bottom: 20px;
-}
-
-.top-course .course h2, .top-course .blog-entry h2, .blog-entries .course h2, .blog-entries .blog-entry h2 {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.top-course .course p, .top-course .blog-entry p, .blog-entries .course p, .blog-entries .blog-entry p {
-  font-size: 13px;
-  color: gray;
-}
-
-.instructor-meta {
-  margin-bottom: 10px;
-  color: #999999 !important;
-}
-
-.btn, .form-control {
-  outline: none;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  border-radius: 0;
-}
-
-.btn:focus, .btn:active, .form-control:focus, .form-control:active {
-  outline: none;
-}
-
-.form-control {
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
-
-textarea.form-control {
-  height: inherit;
-}
-
-.btn {
-  position: relative;
-  border-radius: 100px;
-  color: #000;
-}
-
-.btn.btn-primary {
-  color: #fff;
-  border: 2px solid transparent;
-}
-
-.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
-  color: #000 !important;
-  background: none !important;
-  border: 2px solid #6c5b7b !important;
-}
-
-.btn.btn-primary-white {
-  border: 2px solid transparent;
-  background: #6c5b7b;
-}
-
-.btn.btn-primary-white:hover, .btn.btn-primary-white:focus, .btn.btn-primary-white:active {
-  border: 2px solid #fff;
-  background: none !important;
-}
-
-.btn.btn-white {
-  position: relative;
-  color: #fff;
-  border: 2px solid #fff;
-  background: none;
-}
-
-.btn.btn-white:hover, .btn.btn-white:focus, .btn.btn-white:active {
-  border: 2px solid transparent;
-  background: #6c5b7b !important;
-}
 
 .flaticon-custom {
   font-size: 70px;

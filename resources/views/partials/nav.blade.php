@@ -7,8 +7,9 @@
             <ul class="block-45-list">
               
               <li class="{{ Request::is('/') ? "active" : "" }}"><a href="/">Home</a></li>
-              <li class="{{ Request::is('blog') ? "active" : "" }}"><a href="/blog">Blog</a></li>
+             <li><a href="{{ route('posts.index')}}">Posts</a></li>
                 <li class="{{ Request::is('contact') ? "active" : "" }}"><a href="/contactus">Contact Us</a></li>
+                
 
             </ul>
           </div>

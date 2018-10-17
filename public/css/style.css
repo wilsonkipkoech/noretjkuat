@@ -7,6 +7,10 @@ body {
   background: #e9ecef;
 }
 
+.form-spacing-top{
+  margin-top: 30px;
+}
+
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;

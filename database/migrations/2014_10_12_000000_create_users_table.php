@@ -17,6 +17,10 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('reg_no');
+            $table->integer('year_study');
+            $table->string('county');
+            $table->string('course');
 
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

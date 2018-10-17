@@ -7,19 +7,19 @@
             <ul class="block-45-list">
               
               <li class="{{ Request::is('/') ? "active" : "" }}"><a href="/">Home</a></li>
-             <li><a href="{{ route('posts.index')}}">Posts</a></li>
+            
                 <li class="{{ Request::is('contact') ? "active" : "" }}"><a href="/contactus">Contact Us</a></li>
                 
 
             </ul>
           </div>
           <div class="col-md-6 text-md-right">
-            <ul class="block-45-icons">
-              <li><a href="3"><span class="fa fa-facebook"></span></a></li>
-              <li><a href="3"><span class="fa fa-twitter"></span></a></li>
-              <li><a href="3"><span class="fa fa-linkedin"></span></a></li>
-              <li><a href="3"><span class="fa fa-instagram"></span></a></li>
-            </ul>
+         <a href="/" role="banner" aria-expanded="false"> My Account</span></a>
+         <ul class="dropdown-menu">
+          <li><a class="dropdown-item {{ Request:: is('choir_praiseW') ? "active":" "}}" href="/choir_praiseW">Choir/Praise and Worship Ministry</a></li>
+        </ul>
+
+             
           </div>
         </div>
       </div>
@@ -35,7 +35,7 @@
             <span></span>
           </button>
          
-          
+          @if(Auth::check())
 
           <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
             <ul class="navbar-nav ml-auto">
@@ -81,16 +81,21 @@
                 
                 </div>
               </li>
-
-             <li class="nav-item">
-                <a class="nav-link {{ Request::is('portal') ? "active" : "" }}" href="/portal">Portal</a>
+                     <li class="nav-item">
+                <a class="nav-link {{ Request::is('portal') ? "active" : "" }}" href="portal">Portal</a>  
               </li>
-                <li class="nav-item">
-                <a class="nav-link {{ route('logout') }}" href="/register">Log out</a>
-              </li>              
+               <li class="nav-item">
+                <a class="nav-link {{ Request::is('posts.index') ? "active" : "" }}" href="posts.index">Blog</a>        
+              </li>
+            
+                           
                
             </ul>
-            
+            @else
+
+             <a class="nav-link  btn btn-default {{ Request::is('portal') ? "active" : "" }}" href="portal">Log In</a>
+
+             @endif
             
           </div>
         </div>

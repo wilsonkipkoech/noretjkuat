@@ -13,21 +13,21 @@
 
 
 // //
-// Route::get('/','MainController@Main');
-Route::get('/blog','MainController@getblog');
-Route::get('/jkuatcu','MainController@getjkuatcu');
-Route::get('/mission','MainController@getmission');
-Route::get('/register','MainController@register');
+// Route::get('/','HomeController@Main');
+Route::get('/blog','HomeController@getblog');
+Route::get('/jkuatcu','HomeController@getjkuatcu');
+Route::get('/mission','HomeController@getmission');
+Route::get('/register','HomeController@register');
 
 // Route::get('/register',function(){
 // 	 $county=County::all()
 // 	return view::Make('auth.register')->with('county',$county);
 // });
 
-// Route::get('ministry','MainController@getministry');
-// Route::get('media','MainController@getmedia');
-// Route::get('about','MainController@getabout');
-//Route::get('/portal','MainController@getportal');
+// Route::get('ministry','HomeController@getministry');
+// Route::get('media','HomeController@getmedia');
+// Route::get('about','HomeController@getabout');
+//Route::get('/portal','HomeController@getportal');
 
 //routes for Ministries
 Route::get('/choir_praiseW','MinistryController@getchoir');

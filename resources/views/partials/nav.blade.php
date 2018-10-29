@@ -85,7 +85,7 @@
                 <a class="nav-link {{ Request::is('portal') ? "active" : "" }}" href="portal">Portal</a>  
               </li>
                <li class="nav-item">
-                <a class="nav-link {{ Request::is('posts.index') ? "active" : "" }}" href="posts.index">Blog</a>        
+                <a class="nav-link {{ Request::is('posts') ? "active" : "" }}" href="posts">Blog</a>        
               </li>
             
                            

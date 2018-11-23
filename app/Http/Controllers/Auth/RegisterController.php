@@ -56,6 +56,7 @@ class RegisterController extends Controller
                'county' => 'required|string|max:255',
                 'course' => 'required|string|max:255',
             'password' => 'required|string|min:6|confirmed',
+            'gender' => 'required'
         ]);
     }
 
@@ -75,6 +76,7 @@ class RegisterController extends Controller
             'county'=>$data['county'],
             'course'=>$data['course'],
             'password' => Hash::make($data['password']),
+            'gender' => $data['gender'],
         ]);
     }
 }

@@ -28,9 +28,9 @@
 <header role="banner">
      
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
+        <div class="container">  <a class="navbar-brand absolute" href="index.html">
           <img src="{{URL::asset('images/noretlogo.jpg')}}" height="100" width="100">
-          <a class="navbar-brand absolute" href="index.html">NORET JKUAT<span class="fa fa-heart text-primary"></span>  </a>
+        <span class="fa fa-heart text-primary"></span>  </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
             <span></span>
           </button>
@@ -92,9 +92,8 @@
                
             </ul>
             @else
-
-             <a class="nav-link  btn btn-default {{ Request::is('portal') ? "active" : "" }}" href="portal">Log In</a>
-
+  <a class="nav-link  btn btn-default {{ Request::is('login') ? "active" : "" }}" href="portal">Log In</a>
+         
              @endif
             
           </div>

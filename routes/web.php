@@ -19,6 +19,7 @@ Route::get('/jkuatcu','HomeController@getjkuatcu');
 Route::get('/mission','HomeController@getmission');
 Route::get('/register','HomeController@register');
 
+
 // Route::get('/register',function(){
 // 	 $county=County::all()
 // 	return view::Make('auth.register')->with('county',$county);
@@ -52,6 +53,12 @@ Route::get('/executive','AboutController@getexecutive');
 Route::get('/membership','AboutController@getmembership');
 
 
+
+// Route::group(['middleware' => 'auth'], function () {
+//     Route::get('/', function () {
+//         return view('pages.homes');
+//    });
+// });
 Auth::routes();
 Route::get('/', function(){
 	return view('pages.homes');
@@ -65,3 +72,21 @@ Route::get('blog','BlogController@getIndex');
 Route::get('blog/{slugs}',['as'=>'blog.single', 'uses'=>'BlogController@getSingle'])->where('slugs','[\w\d\-\_]+');
 Route::resource('posts','PostController');
 
+
+
+//routes for the portal
+
+
+Route::get('/nominations','PortalController@getnominateleaders');
+
+Route::get('/associate','PortalController@getassociatereg');
+
+Route::get('/mission','PortalController@getmissionreg');
+
+// Route::get('/members','PortalController@getmembereg');
+
+Route::get('/profile','PortalController@getprofile');
+
+
+//nomination
+Route::get('/nominations','NominationController@index');

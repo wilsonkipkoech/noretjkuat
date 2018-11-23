@@ -52,9 +52,9 @@ class PostController extends Controller
         // store in the database
         $post = new Post;
 
-        $post-> title= $request->title;
+        $post->title= $request->title;
         $post->slugs=$request->slugs;
-        $post-> body=$request->body;
+        $post->body=$request->body;
 
         $post->save();
 

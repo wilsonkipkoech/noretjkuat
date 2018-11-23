@@ -4,7 +4,7 @@
 <body>
     @include('partials.nav')
 
-    <div class="container">
+    <div class="container" style="max-width: 80%;">
         @yield('content')
 
     </div>

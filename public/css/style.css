@@ -2555,3 +2555,11 @@ blockquote p {
     stroke-dashoffset: -136px;
   }
 }
+
+.d-block w-200{
+  display: block; 
+  height: auto;
+  line-height: 1;
+  margin: 0 auto;
+  max-width: 100%;
+}

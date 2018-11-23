@@ -1,0 +1,1 @@
+associatereg.blade.php

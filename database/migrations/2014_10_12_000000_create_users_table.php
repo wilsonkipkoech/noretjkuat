@@ -21,9 +21,9 @@ class CreateUsersTable extends Migration
             $table->integer('year_study');
             $table->string('county');
             $table->string('course');
-
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->String('gender');
             $table->rememberToken();
             $table->timestamps();
         });

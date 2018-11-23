@@ -6,74 +6,45 @@
             <p>Perferendis eum illum voluptatibus dolore tempora consequatur minus asperiores temporibus.</p>
           </div> -->
           <div class="col-md-6 col-lg-6 mb-5 mb-lg-0">
-            <h3 class="heading">Church Quick Links</h3>
+            <h3 class="heading">Noret Quick Links</h3>
             <div class="row">
               <div class="col-md-4">
                 <ul class="list-unstyled">
-                  <li><a href="#">Men's Ministry</a></li>
-                  <li><a href="#">Women's Ministry</a></li>
-                  <li><a href="#">Children's Ministry</a></li>
-                  <li><a href="#">Youth Ministry</a></li>
+                  <li class="{{ Request::is('/') ? "active" : "" }}"><a href="/">Home</a></li>
+                  <li class="{{ Request::is('contact') ? "active" : "" }}"><a href="/contactus">Contact Us</a></li>
+                    <li><a class="{{ Request:: is('choir_praiseW') ? "active":" "}}" href="/choir_praiseW">Choir/Praise and Worship Ministry</a></li>
+                  <li> <a class="  {{ Request::is('executive') ? "active" : "" }}" href="/executive">Executive Team</a></li>
+                  <li> <a class="{{ Request::is('membership') ? "active" : "" }}" href="/membership">Membership</a></li>
+                </ul>
+
+              </div>
+              <div class="col-md-4">
+                <ul class="list-unstyled">
+                  <li><a class="{{ Request:: is('choir_praiseW') ? "active":" "}}" href="/choir_praiseW">Choir/Praise and Worship Ministry</a></li>
+                  <li><a class="{{Request::is('sound') ? "active":""}}" href="/sound">Sound and Lighting Ministry</a></li>
+                  <li><a class=" {{ Request::is('hospitality')? "active":""}}" href="/hospitality">Hospitality Ministry</a></li>
+                  <li><a class=" {{Request::is('creative') ?"active":""}}" href="/creative">Creative Arts Ministry</a></li>
                 </ul>
               </div>
               <div class="col-md-4">
                 <ul class="list-unstyled">
-                  <li><a href="#">Senior Adult Ministry</a></li>
-                  <li><a href="#">Marriage Ministries</a></li>
-                  <li><a href="#">Missions & Outreach</a></li>
-                  <li><a href="#">Prayer Ministry</a></li>
-                </ul>
-              </div>
-              <div class="col-md-4">
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Location</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">Privacy &amp; Policy</a></li>
+                  <li class="{{ Request::is('/') ? "active" : "" }}"><a href="/">Home</a></li>
+            
+                  <li class="{{ Request::is('contact') ? "active" : "" }}"><a href="/contactus">Contact Us</a></li>
+                  <li><a class="{{ Request::is('portal') ? "active" : "" }}" href="portal">Portal</a></li>
+                  <li><a class=" {{ Request::is('posts') ? "active" : "" }}" href="posts">Blog</a>  </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-            <h3 class="heading">Events</h3>
-            <div class="block-21 d-flex mb-4">
-              <div class="text">
-                <h3 class="heading mb-0"><a href="#">Consectetur Adipisicing Elit</a></h3>
-                <div class="meta">
-                  <div><a href="#"><span class="ion-android-calendar"></span> May 29, 2018</a></div>
-                  <div><a href="#"><span class="ion-android-person"></span> Admin</a></div>
-                  <div><a href="#"><span class="ion-chatbubble"></span> 19</a></div>
-                </div>
-              </div>
-            </div>  
-            <div class="block-21 d-flex mb-4">
-              <div class="text">
-                <h3 class="heading mb-0"><a href="#">Dolore Tempora Consequatur</a></h3>
-                <div class="meta">
-                  <div><a href="#"><span class="ion-android-calendar"></span> May 29, 2018</a></div>
-                  <div><a href="#"><span class="ion-android-person"></span> Admin</a></div>
-                  <div><a href="#"><span class="ion-chatbubble"></span> 19</a></div>
-                </div>
-              </div>
-            </div>  
-            <div class="block-21 d-flex mb-4">
-              <div class="text">
-                <h3 class="heading mb-0"><a href="#">Perferendis eum illum</a></h3>
-                <div class="meta">
-                  <div><a href="#"><span class="ion-android-calendar"></span> May 29, 2018</a></div>
-                  <div><a href="#"><span class="ion-android-person"></span> Admin</a></div>
-                  <div><a href="#"><span class="ion-chatbubble"></span> 19</a></div>
-                </div>
-              </div>
-            </div>  
-          </div>
+         
           <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
             <h3 class="heading">Contact Information</h3>
             <div class="block-23">
               <ul>
-                <li><span class="icon ion-android-pin"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                <li><a href="#"><span class="icon ion-ios-telephone"></span><span class="text">+2 392 3929 210</span></a></li>
-                <li><a href="#"><span class="icon ion-android-mail"></span><span class="text">info@yourdomain.com</span></a></li>
+                <li><span class="icon ion-android-pin"></span><span class="text">NORET JKUAT. NORET NAIROBI BRANCH</span></li>
+                <li><a href="#"><span class="icon ion-ios-telephone"></span><span class="text">0717890426</span></a></li>
+                <li><a href="#"><span class="icon ion-android-mail"></span><span class="text">noretjkuat@gmail.com</span></a></li>
               </ul>
             </div>
           </div>

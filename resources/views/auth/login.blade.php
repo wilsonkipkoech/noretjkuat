@@ -3,9 +3,10 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-8" style="margin-top: 100px;">
             <div class="card">
-                <div class="card-header">{{ __('WELCOME TO NORET JKUAT') }}</div>
+
+                <div class="card-header">  <img src="{{URL::asset('images/noretlogo.jpg')}}" height="60" width="100">{{ __('WELCOME TO NORET JKUAT') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">

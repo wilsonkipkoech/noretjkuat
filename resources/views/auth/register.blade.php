@@ -2,10 +2,14 @@
 
 @section('content')
 <div class="container">
-    <div class="card-header">{{ __('WELCOME TO NORET JKUAT') }}</div>
 
-    <div class="row">
-        <div class="col-md-6 col md-offset-3">
+     <div class="jumbotron">
+
+      <h1>{{ __('WELCOME TO NORET JKUAT REGISTRATION PORTAL') }}</h1> 
+      <div class="row justify-content-center">
+     <div class="row" style="margin-top: 20px;">
+        
+        <div class="col-md-10 col md-offset-1">
             {!! Form::open() !!}
 
             {{ Form::label('name', "Name") }}
@@ -39,12 +43,20 @@
 
 
             {{ Form::label('password', "Password") }}
-            {{ Form::text('password',null,['class'=>'form-control']) }}
+            {{ Form::password('password',array('class' => 'form-control','placeholder')) }}
 
             {{ Form::label('password_confirmation', "Confirmation Password") }}
-            {{ Form::text('password_confirmation',null,['class'=>'form-control']) }}
+             {{ Form::password('password_confirmation',array('class' => 'form-control','placeholder')) }}
+
+           
+
 
             {{ Form:: label('gender', "Gender:")}}
+             {!!  Form::select('gender',['Male'=>'Male','Female'=>'Female'], 
+         null,['class' => 'form-control']) 
+    !!}
+
+            
           
            {{ Form::submit('Register',['class'=>'btn   btn-primary btn-block','style'=> 'margin-top:30px;']) }}
 
@@ -52,6 +64,15 @@
 
             {!! Form::close() !!}
         </div>
+        </div>
     </div>
+</div>
+</div>
+
+    </div>
+</div>
+  
+
+    
     
 @endsection

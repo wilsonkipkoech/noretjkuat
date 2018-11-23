@@ -11,7 +11,7 @@ class PortalController extends Controller
     	return view('portal.home');
     }
     public function getmembereg(){
-    	return view('portal.memberreg')
+    	return view('portal.memberreg');
     }
     public function getmissionreg(){
     	return view('portal.missionreg');
